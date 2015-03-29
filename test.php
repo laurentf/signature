@@ -1,0 +1,1 @@
+<img src="http://localhost/wrs/wrs/dominion/WildRats/cassian/Furie/stalker/melee_dps/explorer/Lagos/gore" />

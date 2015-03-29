@@ -1,0 +1,151 @@
+<html>
+<head><title>WildRats : a signature Generator for WILDSTAR</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Leckerli+One" />
+<link rel="stylesheet" href="css/fonts.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+</head>
+<body>
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1 class="lecker">WildRats Signature Generator</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div data-role="collapsible-set" data-content-theme="d" id="set">
+			<div data-role="collapsible" id="set1" data-collapsed="false">
+				<h3>WTF is WRSG?</h3>
+				<p>WildRats Signature Generator is a service that was cooked to help other WILDSTAR players to generate a simple, concise but stylish signature... and... admit it, it's just cool to generate your fucking WILDSTAR signature in a minute!</p>
+				<img src="img/cool.jpg" alt="cool stuff" />
+				<p>You just have to specify a value for each different parameters and this service will automatically generate your signature.</p>
+				<p>Here is the kind of address to use => <strong>http://localhost/signature/wrs/[faction]/[guild_name]/[race]/[name]/[class]/[role]/[path]/[server_name]/[effect]/[size]</strong>
+				<p>Find below a description of the different parameters and an example (no excuses naughty boy) :</p>
+				<ul>
+					<li>param1 FACTION : exiles|dominion</li>
+					<li>param2 GUILD NAME : your guilde name, any string</li>
+					<li>param3 RACE : human|granok|orin|mordesh|cassian|mechari|draken|chua</li>
+					<li>param4 NAME : your character name, any string</li>
+					<li>param5 CLASS: warrior|esper|spellslinger|engineer|stalker|medic</li>
+					<li>param6 ROLE : melee_dps|ranged_dps|tank|healer</li>
+					<li>param7 PATH : soldier|explorer|settler|scientist</li>
+				    <li>param8 SERVER NAME : the server name your are playing on, any string</li>
+					<li>param9 EFFECT : depends if you want a bloody effect on your signature => no_effect|gore|neon|drug</li>
+					<li>param10 SIZE : signature size => normal|small</li>
+				</ul>
+				<p><a href="http://localhost/signature/wrs/exiles/Your%20guild/human/YourName/warrior/melee_dps/soldier/Server/gore/normal" target="_blank" title="Exemple">Example</a></p>
+
+			</div>
+			<div data-role="collapsible" id="set2" data-collapsed="true">
+				<h3>The Wizard (work in progress)</h3>
+				
+				<form>
+					<div data-role="fieldcontain">
+					   	<fieldset data-role="controlgroup" data-type="horizontal">
+					     	<legend>Faction:</legend>
+					         	<input type="radio" name="radio-choice-b" id="radio-choice-c" value="exiles" checked="checked" />
+					         	<label for="radio-choice-c">Exiles</label>
+					         	<input type="radio" name="radio-choice-b" id="radio-choice-d" value="dominion" />
+					         	<label for="radio-choice-d">Dominion</label>
+					   	</fieldset>
+				    </div> 
+
+				    <div data-role="fieldcontain">
+			         <label for="name">Guild name:</label>
+			         <input type="text" name="name" id="name" value=""  />
+					</div>
+
+					<div data-role="fieldcontain">
+						<label for="select-choice-1" class="select">Race:</label>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="warrior">Human</option>
+							<option value="spellslinger">Granok</option>
+							<option value="esper">Aurin</option>
+							<option value="engineer">Mordesh</option>
+							<option value="stalker">Cassian</option>
+							<option value="medic">Mechari</option>
+							<option value="medic">Draken</option>
+							<option value="medic">Chua</option>
+						</select>
+					</div>
+
+					 <div data-role="fieldcontain">
+			         <label for="name">Character name:</label>
+			         <input type="text" name="name" id="name" value=""  />
+					</div>
+
+				    <div data-role="fieldcontain">
+						<label for="select-choice-1" class="select">Class:</label>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="warrior">Warrior</option>
+							<option value="spellslinger">Spellslinger</option>
+							<option value="esper">Esper</option>
+							<option value="engineer">Engineer</option>
+							<option value="stalker">Stalker</option>
+							<option value="medic">Medic</option>
+						</select>
+					</div>
+
+
+					<div data-role="fieldcontain">
+						<label for="select-choice-1" class="select">Role:</label>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="melee_dps">Melee DPS</option>
+							<option value="ranged_dps">Ranged DPS</option>
+							<option value="healer">Healer</option>
+							<option value="tank">Tank</option>
+						</select>
+					</div>
+
+					<div data-role="fieldcontain">
+						<label for="select-choice-1" class="select">Path:</label>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="soldier">Soldier</option>
+							<option value="explorer">Explorer</option>
+							<option value="settler">Settler</option>
+							<option value="scientist">Scientist</option>
+						</select>
+					</div>
+
+					 <div data-role="fieldcontain">
+			         <label for="name">Server name:</label>
+			         <input type="text" name="name" id="name" value=""  />
+					</div>
+
+					<div data-role="fieldcontain">
+					<label for="slider2">Bloody effect:</label>
+					<select name="slider2" id="slider2" data-role="slider">
+						<option value="off">Off</option>
+						<option value="on">On</option>
+					</select>
+					</div>
+
+					<div class="ui-body ui-body-b">
+						<fieldset class="ui-grid-a">
+								<div class="ui-block-a"><button type="submit" data-theme="d">Reset</button></div>
+								<div class="ui-block-b"><button type="submit" data-theme="a">Generate</button></div>
+					    </fieldset>
+					</div>
+
+
+			    </form>
+
+
+			</div>
+		</div>
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>WRSG &copy;2014</h4>
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+</body>
+</html>
