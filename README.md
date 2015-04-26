@@ -7,3 +7,7 @@
 # credits
 - Slim Framework (awesome framework to make REST API in PHP) http://www.slimframework.com/
 - ImageWorkshop (wonderful image processing lib in PHP) http://phpimageworkshop.com/ (was nice in order to skip the install of ImageMagick)
+
+# Demo
+- Online generator home - http://www.wildrats.fr/signature/wrs
+- Online generator wizard -  http://www.wildrats.fr/?page_id=118
